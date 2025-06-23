@@ -7,6 +7,7 @@ az account set --subscription "S-06-10"
 ```
 
 ### Create Users
+```
 for i in $(seq -w 1 99); do
   username="u$i"
   password=""  # You may want to use a stronger or randomized password
@@ -16,7 +17,7 @@ for i in $(seq -w 1 99); do
     --password "$password" \
     --force-change-password-next-sign-in false
 done
-
+```
 
 #### - Below command will remove all the Resource Groups and underlying resources from Azure Account in Parallel:
 ```
